@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#101010">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:id="@+id/imgHome"-->
+<!--                    android:background="#03A9F4"-->
+<!--                    android:src="@drawable/home"-->
+<!--                    android:layout_marginRight="8dp"/>-->
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imgHome"
+                    android:background="@drawable/home"
+                    android:layout_marginRight="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/txtTT"
+                    android:text="@string/TimeTable"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/purple_500"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/calendar" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerDay">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

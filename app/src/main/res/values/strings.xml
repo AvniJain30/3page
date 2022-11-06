@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">3page</string>
+    <string name="day">Day</string>
+    <string name="TimeTable">Time Table</string>
+</resources>

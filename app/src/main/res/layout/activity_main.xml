@@ -23,17 +23,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="fill_horizontal">
 
-<!--                <ImageButton-->
-<!--                    android:layout_width="50dp"-->
-<!--                    android:layout_height="30dp"-->
-<!--                    android:layout_gravity="center_vertical"-->
-<!--                    android:id="@+id/imgHome"-->
-<!--                    android:background="#03A9F4"-->
-<!--                    android:src="@drawable/home"-->
-<!--                    android:layout_marginRight="8dp"/>-->
-
                 <Button
-                    android:layout_width="40dp"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
                     android:id="@+id/imgHome"
@@ -53,11 +44,19 @@
                     android:layout_marginRight="10dp" />
 
                 <Button
+                    android:id="@+id/add"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/add" />
+
+                <Button
                     android:id="@+id/imgCalendar"
-                    android:layout_width="35dp"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="150dp"
+                    android:layout_marginLeft="15dp"
                     android:background="@drawable/calendar" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>

@@ -9,15 +9,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
-    Button homeImg, CalendarImg;
+    Button homeImg, CalendarImg, add;
     TextView timeTable;
 
     ArrayList<DayModel> arrDay = new ArrayList<>();
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         homeImg = findViewById(R.id.imgHome);
         CalendarImg = findViewById(R.id.imgCalendar);
+        add = findViewById(R.id.add);
         timeTable = findViewById(R.id.txtTT);
 
         homeImg.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Calendar.class);
+                startActivity(intent);
+            }
+        });
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, add.class);
                 startActivity(intent);
             }
         });

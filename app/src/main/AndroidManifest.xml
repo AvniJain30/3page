@@ -11,7 +11,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
+        <activity
+            android:name=".monday"
+            android:exported="false" />
+        <activity
+            android:name=".add"
+            android:exported="false" />
         <activity
             android:name=".Calendar"
             android:exported="true" />

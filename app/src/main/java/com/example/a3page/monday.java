@@ -32,7 +32,7 @@ public class monday extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
-        mondayItemAdapter = new mondayItemAdapter(this, list);
+        //mondayItemAdapter = new mondayItemAdapter(this, list);
         recyclerView.setAdapter(mondayItemAdapter);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
